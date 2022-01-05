@@ -1,0 +1,16 @@
+module:
+  messagebroker:
+    consumer:
+      bootstrapServer: "127.0.0.1:29092"
+      groupID: "ONSALE_KERNEL"
+      topic: "ONSALE_NEW_PROMOTION"
+
+server:
+  servlet:
+    context-path: '/api/v1'
+
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/onsale
+    username: admin
+    password: admin
